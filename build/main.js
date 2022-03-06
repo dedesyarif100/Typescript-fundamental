@@ -5,6 +5,7 @@ const Department_1 = require("./assets/Department");
 const Developer_1 = require("./assets/Developer");
 const People_1 = require("./assets/People");
 const DataType_1 = require("./assets/DataType");
+const DataType1_1 = require("./assets/DataTypesChallenges/DataType1");
 class Hewan extends People_1.People {
     constructor(value) {
         super(value);
@@ -47,3 +48,9 @@ developer.develop();
 developer.reactJs();
 const dataType = new DataType_1.DataType;
 dataType.DataTypeUnknown();
+dataType.DataTypeAny();
+dataType.DataTypeVoid();
+dataType.DataTypeNever();
+const dataType1 = new DataType1_1.DataType1;
+dataType1.ApplyDataType();
+dataType1.DataTypeTuple();

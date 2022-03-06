@@ -55,5 +55,36 @@ class DataType {
         console.log(notSure);
         notSure = false;
     }
+    DataTypeAny() {
+        // function getValue(key: string): any;
+        // const str: string = getValue("my string");
+        // let looselyTyped: any = 4;
+        // looselyTyped.toFixed();
+        // console.log(looselyTyped.toFixed());
+        let looselyTyped = {};
+        // let d = looselyTyped.b;
+    }
+    DataTypeVoid() {
+        function warnUser() {
+            console.log("This is my warning message");
+        }
+        warnUser();
+        let unusable = undefined;
+        // OK if `--strictNullChecks` is not given
+        unusable = undefined;
+    }
+    DataTypeNever() {
+        function error(message) {
+            throw new Error(message);
+        }
+        function fail() {
+            return error("Something failed");
+        }
+    }
+    DataTypeObject() {
+        create({ prop: 0 });
+    }
+    DataTypeAssertions() {
+    }
 }
 exports.DataType = DataType;

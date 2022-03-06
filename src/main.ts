@@ -3,6 +3,7 @@ import {TeslaEmployee} from './assets/Department';
 import {Developer} from './assets/Developer';
 import {People} from './assets/People';
 import { DataType } from './assets/DataType';
+import { DataType1 } from './assets/DataTypesChallenges/DataType1';
 
 class Hewan extends People {
     value1: number = 11;
@@ -63,3 +64,11 @@ developer.reactJs();
 
 const dataType = new DataType;
 dataType.DataTypeUnknown();
+dataType.DataTypeAny();
+dataType.DataTypeVoid();
+dataType.DataTypeNever();
+
+
+const dataType1 = new DataType1;
+dataType1.ApplyDataType();
+dataType1.DataTypeTuple();
